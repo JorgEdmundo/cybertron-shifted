@@ -12,6 +12,9 @@ An [Obsidian](https://obsidian.md/) theme inspired by the [Cybertron](https://gi
 4. Search for `Cybertron Shifted` in the Filter text input
 5. Click `Use` and then you're done! 🎉
 
+## Preview
+![CybertronShifted](./CybertronShifted.png)
+
 ## Other themes
 
 You could also check my theme [JeAP Glow](https://github.com/JorgEdmundo/jeap-glow) for [Visual Studio Code](https://code.visualstudio.com/).
