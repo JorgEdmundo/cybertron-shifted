@@ -1,15 +1,23 @@
-/* MODIFIED 2023-01-20 */
+/* MODIFIED 2023-05-10 */
 
 .theme-dark
 {
+  /* After Glow JeAP colors */
+  --glow-color-const-blue: #6C99BB;
+  --glow-color-class-green: #E6F355;
+  --glow-color-orange-param: #E87D3E;
+  --glow-color-tag-salmon: #FC929E;
+  --glow-color-variable-mint: #E6EEE7;
+  --glow-color-escape-cyan: #89DDFF;
+  /* END */
   --background-primary: #2f3136;
   --background-primary-alt: #36393f;
   --background-secondary: #141414;
   --background-secondary-alt: #222222;
-  --text-normal: #E6EEE7;
+  --text-normal: var(--glow-color-variable-mint);
   --text-faint: #999999;
   --text-muted: #aaaaaa;
-  --text-inline-code: #FC929E;
+  --text-inline-code: var(--glow-color-tag-salmon);
   --text-selection: #164f92;
   --text-on-accent: #5dbcd2;
   --text-accent: #319cb4;
@@ -44,6 +52,7 @@
   --background-modifier-form-field: #2f3136;
   --background-modifier-form-field-highlighted: #2f3136;
   --custom-black: #000000;
+  --nav-items-space: 4px 8px;
 }
 #graph-view-canvas .links
 {
@@ -184,6 +193,42 @@ span.math {
   color: #d669bc !important;
 }
 
+/**********************/
+/* Workspace Icons */
+/**********************/
+
+.clickable-icon {
+  cursor: pointer;
+}
+
+/**********************/
+/* Workspace Tabs */
+/**********************/
+
+.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
+.workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--glow-color-class-green);
+}
+
+.workspace-tab-header-inner {
+  cursor: pointer;
+}
+
+/***************************************/
+/*          Code Block                */
+/***************************************/
+
+.HyperMD-codeblock.HyperMD-codeblock-begin,
+.HyperMD-codeblock.HyperMD-codeblock-end {
+  color: var(--glow-color-variable-mint) !important;
+  font-weight: 700;
+}
+
+.code-block-flair {
+  color: var(--glow-color-variable-mint) !important;
+  cursor: pointer !important;
+}
+
 /***************************************/
 /*          Blockquote                */
 /***************************************/
@@ -303,7 +348,8 @@ code,
 
 th
 {
-  font-weight: 800 !important;
+  color: var(--glow-color-escape-cyan) !important;
+  font-weight: 700 !important;
 }
 
 thead
@@ -446,6 +492,10 @@ button.mod-cta {
   font-size: 13px;
 }
 
+.cm-hmd-frontmatter.cm-atom {
+  color: var(--glow-color-tag-salmon)
+}
+
 /*************/
 /* LEFT side dock --------- RIBBON*/
 /*************/
@@ -525,7 +575,7 @@ side-dock-ribbon-tab-inner is-after-active {
 .nav-file-title {
   color: #999999;
   background-color: #141414;
-  }
+}
   
 .nav-folder-children {
   background-color: #141414;
@@ -615,7 +665,6 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
-.nav-file-title-content,
 .search-result-file-title,
 .search-result-file-match
 {
@@ -624,6 +673,10 @@ side-dock-ribbon-tab-inner is-after-active {
   line-height: normal !important;
   word-break: keep-all;
   font-size: 14px;
+}
+
+.nav-file-title-content {
+  padding: var(--nav-items-space);
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
@@ -653,6 +706,11 @@ side-dock-ribbon-tab-inner is-after-active {
 
 /* EDITOR Text (outside of headings and code) */
 
+.HyperMD-header .cm-header {
+  display: inline-block;
+  margin: 5px 0;
+}
+
 .cm-s-obsidian
 {
   font-family: var(--font-family-editor);
@@ -671,10 +729,7 @@ side-dock-ribbon-tab-inner is-after-active {
   padding-right: 4% !important;
 }
 
-
-
 /* EDITOR headings */
-
 
 .cm-header-1
 {
@@ -809,9 +864,7 @@ p {
   padding-right: 10% !important;
 }
 
-
 /* PREVIEW headings */
-
 
 .markdown-preview-view h1
 {
@@ -876,11 +929,6 @@ p {
   
 }
 
-
-
-
-
-
 /* this code stuff isn't working for me */
 
 code
@@ -898,19 +946,11 @@ code
   border-color: #ba6ea0!important;
 }
 
-
-
-
-
-
-
-
 /* internal embedded link rendering in preview */
 .markdown-embed-title
 {
   font-weight: 600;
 }
-
 
 /* normal text outside of headings and code */
 .markdown-preview-view
@@ -921,8 +961,6 @@ code
   padding-left: 8% !important;
   padding-right: 4% !important;
 }
-
-
 
 /* remove secondary scroll bar in editor that comes from adding variable padding */
 .CodeMirror-scroll::-webkit-scrollbar {
@@ -935,13 +973,11 @@ code
 }
 */
 
-
 /* internal embedded link rendering in preview */
 .markdown-embed-title
 {
   font-weight: 600;
 }
-
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
 .search-empty-state
@@ -968,17 +1004,17 @@ code
 /******************/
 
 .callout {
-  border: 2px solid #6C99BB;
+  border: 2px solid var(--glow-color-const-blue);
 }
 
 .cm-callout .callout-title,
 .cm-callout .callout-title .callout-icon .svg-icon {
-  color: #E6F355;
+  color: var(--glow-color-class-green);
   font-size: 24px;
 }
 
 .cm-callout .callout-content strong {
-  color: #E87D3E;
+  color: var(--glow-color-orange-param);
   font-weight: 500;
 }
 
@@ -989,8 +1025,6 @@ code
 .CodeMirror-code span.cm-inline-code {
 	color: #d4d4d4 !important;
 }
-
-
 
 /* Editor CodeBlock TEXT Appearance - */
 .cm-s-obsidian pre.HyperMD-codeblock {
@@ -1248,6 +1282,10 @@ li::marker {
   margin-top: .5em;
 }
 
+.collapse-indicator {
+  cursor: pointer !important;
+}
+
 /***************************************/
 /*    Tiny Tweaks now that Nick knows a smidgen more */
 /***************************************/
@@ -1436,7 +1474,6 @@ color: var(--text-normal);
   background: var(--background-secondary-alt);
 }
 
-
 .vertical-tab-nav-item:hover {
   background: var(--background-secondary);
 }
@@ -1488,7 +1525,7 @@ button.mod-cta:hover {
 
 .flair.mod-pop {
   background-color: var(--background-primary);
-  color: #E87D3E;
+  color: var(--glow-color-orange-param);
 }
 
 /* Tag List in Right Sidebar*/
@@ -1501,6 +1538,18 @@ button.mod-cta:hover {
   padding-left: 20px;
   border-radius: 3px;
   color: var(--text-muted);
+}
+
+.tree-item-self.is-active {
+  color: var(--glow-color-class-green);
+}
+
+.tree-item-self.is-clickable {
+  cursor: pointer;
+}
+
+.tree-item-self.nav-file-title {
+  margin-bottom: 0;
 }
 
 /* Making sure "Conflict" text looks good*/
@@ -1619,5 +1668,5 @@ mark
 /**********************/
 
 .cm-s-obsidian .cm-templater-command.cm-templater-interpolation-tag {
-  color: #6C99BB;
+  color: var(--glow-color-const-blue);
 }
