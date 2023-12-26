@@ -572,7 +572,7 @@ side-dock-ribbon-tab-inner is-after-active {
   margin-bottom: -1px;
 }
 
-.tree-item-self .nav-folder-title {
+.tree-item-self.nav-folder-title {
   padding: 5px 0;
 }
 
