@@ -570,7 +570,8 @@ side-dock-ribbon-tab-inner is-after-active {
   font-weight: 500;
   margin-top: 0px;
   margin-bottom: -2px;
-  }
+  padding: 5px 0;
+}
 
 .nav-file-title {
   color: #999999;
@@ -1669,4 +1670,22 @@ mark
 
 .cm-s-obsidian .cm-templater-command.cm-templater-interpolation-tag {
   color: var(--glow-color-const-blue);
+}
+
+
+/**********************/
+/* Kanban Plugin */
+/**********************/
+.kanban-plugin__lane-title-text p {
+  color: var(--glow-color-class-green);
+}
+
+.kanban-plugin__new-item-button:hover {
+  background-color: var(--glow-color-orange-param);
+  color: var(--glow-color-variable-mint);
+  cursor: pointer;
+}
+
+.kanban-plugin__item-postfix-button.is-enabled.clickable-icon .kanban-plugin__icon {
+  color: var(--glow-color-orange-param);
 }
