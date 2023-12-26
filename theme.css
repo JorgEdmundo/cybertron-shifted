@@ -675,10 +675,6 @@ side-dock-ribbon-tab-inner is-after-active {
   font-size: 14px;
 }
 
-.nav-file-title-content {
-  padding: var(--nav-items-space);
-}
-
 /* clean up side bar empty state (e.g. unlinked mentions) */
 .search-empty-state
 {
