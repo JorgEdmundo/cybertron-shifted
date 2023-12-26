@@ -569,7 +569,10 @@ side-dock-ribbon-tab-inner is-after-active {
   background-color: #141414;
   font-weight: 500;
   margin-top: 0px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
+}
+
+.tree-item-self .nav-folder-title {
   padding: 5px 0;
 }
 
