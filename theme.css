@@ -1,7 +1,6 @@
-/* MODIFIED 2023-05-10 */
+/* MODIFIED 2024-01-22 */
 
-.theme-dark
-{
+.theme-dark {
   /* After Glow JeAP colors */
   --glow-color-const-blue: #6C99BB;
   --glow-color-class-green: #E6F355;
@@ -54,8 +53,8 @@
   --custom-black: #000000;
   --nav-items-space: 4px 8px;
 }
-#graph-view-canvas .links
-{
+
+#graph-view-canvas .links {
   stroke: var(--interactive-accent-rgb) !important;
 }
 
@@ -122,8 +121,7 @@ em {
 /* HIGHLIGHTER */
 /**********************/
 
-mark
-{
+mark {
   background-color: var(--text-mark) !important;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -167,7 +165,6 @@ mark
 
 .vertical-tab-content {
   background-color: var(--background-primary);
-  padding: 5px 30px;
 }
 
 .u-pop {
@@ -259,8 +256,7 @@ a,
 .internal-link,
 .cm-hmd-internal-link,
 .cm-link,
-.cm-formatting-link
-{
+.cm-formatting-link {
   color: var(--text-a) !important;
   text-decoration: none !important;
   font-family: var(--font-family-preview) !important;
@@ -268,8 +264,7 @@ a,
 
 /* link hover color */
 a:hover,
-.internal-link:hover
-{
+.internal-link:hover {
   color: var(--text-a-hover) !important;
   text-decoration: none !important;
 }
@@ -280,56 +275,47 @@ a:not(.internal-link) {
 }
 
 /* blockquote */
-.cm-quote /* for editor */
-{
+.cm-quote /* for editor */ {
   color: var(--text-normal) !important;
 }
 
-.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1
-{
+.cm-formatting.cm-formatting-quote.cm-formatting-quote-1.cm-quote.cm-quote-1 {
   color: #9e8aff !important;
 }
 
-blockquote /* for preview */
-{
+blockquote /* for preview */ {
   border-color: var(--blockquote-border) !important;
 }
 
 /* icons at top of panes*/
-.file-view-actions a
-{
+.file-view-actions a {
   color: var(--text-muted) !important;
 }
 
-.file-view-actions a:hover
-{
+.file-view-actions a:hover {
   color: var(--text-a) !important;
 }
 
 /* html tags in editor */
-.cm-tag
-{
+.cm-tag {
   color: var(--text-accent) !important;
 }
 
 /* code blocks in preview */
-pre code
-{
+pre code {
   padding: 6px !important;
   line-height: normal;
   display: block;
   background-color: var(--pre-code) !important;
 }
 
-.markdown-preview-view pre
-{
+.markdown-preview-view pre {
   padding: 0px !important;
 }
 
 /* in-line code for editor and preview and code block for editor*/
 code,
-.cm-inline-code
-{
+.cm-inline-code {
   background-color: var(--inline-pre-code) !important;
   color: var(--text-inline-code) !important;
   bottom: 0px !important;
@@ -337,8 +323,7 @@ code,
 }
 
 /* code and code blocks for preview */
-.markdown-preview-view code
-{
+.markdown-preview-view code {
   font-size: 13.5px;
 }
 
@@ -346,19 +331,16 @@ code,
 /* tables */
 /**********/
 
-th
-{
+th {
   color: var(--glow-color-escape-cyan) !important;
   font-weight: 700 !important;
 }
 
-thead
-{
+thead {
   border-bottom: 4px solid var(--background-modifier-border);
 }
 
-.table
-{
+.table {
   background-color: var(--background-secondary-alt);
   border: 1px solid var(--background-modifier-border);
   padding: 4px;
@@ -371,14 +353,12 @@ thead
 }
 
 /* embedded images */
-img
-{
+img {
   display: block;
 }
 
 /* horizontal line in preview */
-.markdown-preview-view hr
-{
+.markdown-preview-view hr {
   background-color: var(--text-normal);
 }
 
@@ -428,7 +408,6 @@ img
   margin-right: .7em;
 }
 
-
 .markdown-preview-view .task-list-item-checkbox:checked::before {
   content: '✓';
   position: absolute;
@@ -440,12 +419,9 @@ img
   text-shadow: 0 0 0.1em #8d8d8d;
 }
 
-
-.markdown-preview-view .task-list-item-checkbox
-{
+.markdown-preview-view .task-list-item-checkbox {
   top: 0px;
 }
-
 
 .checkbox-container {
   background-color: #9196a1;
@@ -463,7 +439,6 @@ img
 .checkbox-container.is-enabled {
   background-color: #5dbcd2;
 }
-
 
 .list-item-ending-flair {
   position: absolute;
@@ -512,7 +487,6 @@ button.mod-cta {
   background-color: #141414;
 }
 
-
 /* LEFT side dock ----- RIBBON FAILED ATTEMPTS*/
 side-dock-ribbon-tab is-before-active {
   color: #141414;
@@ -547,18 +521,17 @@ side-dock-ribbon-tab-inner is-after-active {
   color: #cccccc !important;
 }
 
-
 .side-dock-title {
   background-color: #141414;
-  }
+ }
 
 .nav-buttons-container {
   background-color: #141414;
-  }
+ }
   
 .nav-header {
   background-color: #141414;
-  }
+ }
 
 /*************/
 /* LEFT side dock --------- FILE EXPLORER*/
@@ -636,8 +609,7 @@ side-dock-ribbon-tab-inner is-after-active {
 .nav-file.is-active .nav-file-tag { color: var(--text-normal); }
 
 /* side dock text, like file names and backlink context */
-.side-dock-panels-container *
-{
+.side-dock-panels-container * {
   font-size: 13px !important;
 }
 
@@ -647,8 +619,7 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 /* side dock titles at top */
-.side-dock-title
-{
+.side-dock-title {
   font-size: 20px !important;
   font-weight: 800 !important;
 }
@@ -659,15 +630,13 @@ side-dock-ribbon-tab-inner is-after-active {
 .side-dock-ribbon-action:hover,
 .side-dock-ribbon-action.is-active:hover,
 .nav-action-button:hover,
-.side-dock-collapse-btn:hover
-{
+.side-dock-collapse-btn:hover {
   color: var(--text-a);
 }
 
 /* condense line spacing on file explorer title list. also avoids character-level word breaks */
 .search-result-file-title,
-.search-result-file-match
-{
+.search-result-file-match {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   line-height: normal !important;
@@ -676,8 +645,7 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
+.search-empty-state {
   width: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -685,13 +653,11 @@ side-dock-ribbon-tab-inner is-after-active {
 }
 
 /* font for everything outside of editor/preview panes */
-.app-container
-{
+.app-container {
   font-family: var(--font-family-preview);
 }
 
-.status-bar-item
-{
+.status-bar-item {
   font-family: var(--font-family-preview);
   font-size: 12px;
 }
@@ -707,8 +673,7 @@ side-dock-ribbon-tab-inner is-after-active {
   margin: 5px 0;
 }
 
-.cm-s-obsidian
-{
+.cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -716,8 +681,7 @@ side-dock-ribbon-tab-inner is-after-active {
   padding-right: 0% !important;
 }
 
-.mod-single-child .cm-s-obsidian
-{
+.mod-single-child .cm-s-obsidian {
   font-family: var(--font-family-editor);
   font-size: 15px;
   color: var(--text-normal);
@@ -727,8 +691,7 @@ side-dock-ribbon-tab-inner is-after-active {
 
 /* EDITOR headings */
 
-.cm-header-1
-{
+.cm-header-1 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 28px;
@@ -736,8 +699,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h1);
 }
 
-.cm-header-2
-{
+.cm-header-2 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 26px;
@@ -745,8 +707,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h2);
 }
 
-.cm-header-3
-{
+.cm-header-3 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 23px;
@@ -754,8 +715,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h3);
 }
 
-.cm-header-4
-{
+.cm-header-4 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 19px;
@@ -764,8 +724,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h4);
 }
 
-.cm-header-5
-{
+.cm-header-5 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 18px;
@@ -774,8 +733,7 @@ side-dock-ribbon-tab-inner is-after-active {
   color: var(--text-title-h5);
 }
 
-.cm-header-6
-{
+.cm-header-6 {
   font-family: var(--font-family-editor);
   font-weight: 500;
   font-size: 16px;
@@ -800,8 +758,6 @@ side-dock-ribbon-tab-inner is-after-active {
   text-decoration: underline;
 }
 
-
-
 /* This is the dashes in bullets. Color does not work, 
 but font weight does. */
 .cm-formatting-list {
@@ -825,7 +781,6 @@ but font weight does. */
   color: #fcf601;
 }
 
-
 .cm-s-obsidian span.cm-formatting-list {
   color: #b9adff !important;
 }
@@ -840,19 +795,16 @@ p {
   margin-block-start: 0px;
 }
 
-.markdown-preview-view
-{
+.markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
   padding-left: 10% !important;
   padding-right: 10% !important;
   line-height: 22px;
-
 }
 
-.mod-single-child .markdown-preview-view
-{
+.mod-single-child .markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -862,8 +814,7 @@ p {
 
 /* PREVIEW headings */
 
-.markdown-preview-view h1
-{
+.markdown-preview-view h1 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 26px;
@@ -873,8 +824,7 @@ p {
   color: var(--text-title-h1);
 }
 
-.markdown-preview-view h2
-{
+.markdown-preview-view h2 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 24px;
@@ -883,8 +833,7 @@ p {
   color: var(--text-title-h2);
 }
 
-.markdown-preview-view h3
-{
+.markdown-preview-view h3 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 22px;
@@ -893,8 +842,7 @@ p {
   color: var(--text-title-h3);
 }
 
-.markdown-preview-view h4
-{
+.markdown-preview-view h4 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 19px;
@@ -903,8 +851,7 @@ p {
   color: var(--text-title-h4);
 }
 
-.markdown-preview-view h5
-{
+.markdown-preview-view h5 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 18px;
@@ -913,8 +860,7 @@ p {
   color: var(--text-title-h5);
 }
 
-.markdown-preview-view h6
-{
+.markdown-preview-view h6 {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 16px;
@@ -922,13 +868,11 @@ p {
   line-height: 24px;
   margin-bottom: 3px;
   color: var(--text-title-h6);
-  
 }
 
 /* this code stuff isn't working for me */
 
-code
-{
+code {
   font-family: var(--font-family-preview);
   font-weight: 500;
   font-size: 16px;
@@ -943,14 +887,12 @@ code
 }
 
 /* internal embedded link rendering in preview */
-.markdown-embed-title
-{
+.markdown-embed-title {
   font-weight: 600;
 }
 
 /* normal text outside of headings and code */
-.markdown-preview-view
-{
+.markdown-preview-view {
   font-family: var(--font-family-preview);
   font-size: 15px;
   color: var(--text-normal);
@@ -970,14 +912,12 @@ code
 */
 
 /* internal embedded link rendering in preview */
-.markdown-embed-title
-{
+.markdown-embed-title {
   font-weight: 600;
 }
 
 /* clean up side bar empty state (e.g. unlinked mentions) */
-.search-empty-state
-{
+.search-empty-state {
   width: auto;
   padding-left: 10px;
   padding-right: 5px;
@@ -1041,9 +981,9 @@ br + .internal-embed {
 }
 
 .markdown-preview-view code {
-color: #d4d4d4 !important;
-background-color: var(--pre-code) !important;
-bottom: -0.1px !important;
+  color: #d4d4d4 !important;
+  background-color: var(--pre-code) !important;
+  bottom: -0.1px !important;
 }
 
 .markdown-embed {
@@ -1068,12 +1008,12 @@ bottom: -0.1px !important;
 .markdown-preview-view .markdown-embed-content>:last-child { margin-bottom: 0; }
 
 .markdown-embed-link {
-color: #5bb983 !important;
-right: 2px !important;
+  color: #5bb983 !important;
+  right: 2px !important;
 }
 
 .markdown-embed-link:hover {
-color: #38dc7f !important;
+  color: #38dc7f !important;
 }
 
 /******************/
@@ -1181,6 +1121,7 @@ color: #38dc7f !important;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transform: translate3d(0px, -3px, 0px);
 }
+
 br + .internal-embed {
   margin-top: 1rem;
 }
@@ -1194,6 +1135,7 @@ br + .internal-embed {
 .internal-embed:not([src*="#^"]) .markdown-embed-link {
   left: auto;
 }
+
 .internal-embed[src*="^"] .markdown-preview-sizer {
   padding-left: .25em !important;
   padding-top: 0 !important;
@@ -1224,6 +1166,7 @@ li .internal-embed .markdown-embed {
   pointer-events:auto !important;
   border:1px solid var(--background-modifier-border);
 }
+
 .popover .markdown-embed-link {
   display:none;
 }
@@ -1295,7 +1238,7 @@ li::marker {
 .side-dock-collapse-btn:hover
 .workspace-tab-header-inner:hover,
 .workspace-tab-header-inner-icon:hover {
-color: var(--text-normal);
+  color: var(--text-normal);
 }
 
 /* The "other" Vertical Lines */
@@ -1401,27 +1344,12 @@ color: var(--text-normal);
 
 .modal.mod-settings .vertical-tab-content-container {
   border-left: var(--border-width) solid var(--background-modifier-border);
-  padding-bottom: 0;
-  padding-right: 0;
 }
 
 .modal.mod-settings {
   max-width: 1000px;
   width: 90vw;
   height: 90vh;
-}
-
-.modal.mod-settings .vertical-tab-header {
-  height: 90vh;
-}
-
-.modal.mod-settings .vertical-tab-content-container {
-  height: 90vh;
-}
-
-.modal.mod-community-theme,
-.modal.mod-community-plugin {
-  width: 90vw;
 }
 
 .modal,
@@ -1605,7 +1533,6 @@ img.emoji {
   color: var(--text-on-accent);
 }
 
-
 /* Making the search dropdown box have smaller fonts */
 .suggestion-container.mod-search-suggestion {
   font-family: var(--font-family-preview);
@@ -1616,8 +1543,7 @@ img.emoji {
 .community-item.is-selected,
 .community-item.is-selected .community-item-author,
 .community-item.is-selected .community-item-downloads,
-.community-item.is-selected .community-item-updated
-{
+.community-item.is-selected .community-item-updated {
   color: var(--custom-black);
 }
 
@@ -1625,8 +1551,7 @@ img.emoji {
 /* HIGHLIGHTER UPDATES */
 /**********************/
 
-mark
-{
+mark {
   background-color: var(--text-mark) !important;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1653,7 +1578,7 @@ mark
   padding: 0 0.1rem;
   background-image: linear-gradient(60deg, #86c3ff 0%, #ddb9ff 100%) !important;
   text-shadow: 0 0 0.6em #fcf80118;
-  }
+ }
 
 /**********************/
 /* Templater Plugin */
@@ -1662,7 +1587,6 @@ mark
 .cm-s-obsidian .cm-templater-command.cm-templater-interpolation-tag {
   color: var(--glow-color-const-blue);
 }
-
 
 /**********************/
 /* Kanban Plugin */
@@ -1679,4 +1603,8 @@ mark
 
 .kanban-plugin__item-postfix-button.is-enabled.clickable-icon .kanban-plugin__icon {
   color: var(--glow-color-orange-param);
+}
+
+.kanban-plugin__item-title-wrapper {
+  cursor: pointer;
 }
