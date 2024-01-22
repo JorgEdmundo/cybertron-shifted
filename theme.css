@@ -464,7 +464,7 @@ button.mod-cta {
 }
 
 .cm-hmd-frontmatter {
-  font-size: 13px;
+  font-size: calc(var(--font-smaller) * .92);
 }
 
 .cm-hmd-frontmatter.cm-atom {
@@ -675,7 +675,7 @@ side-dock-ribbon-tab-inner is-after-active {
 
 .cm-s-obsidian {
   font-family: var(--font-family-editor);
-  font-size: 15px;
+  font-size: var(--font-text-size);
   color: var(--text-normal);
   padding-left: 3% !important;
   padding-right: 0% !important;
